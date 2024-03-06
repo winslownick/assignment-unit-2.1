@@ -40,7 +40,7 @@ let pets = 0;
 
  console.log('I have this many pets: ' + pets); 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPet = 1;
+let friendsPets = 1;
 
 // 10 - Add two pets to your `pets` variable
 pets = 2;
@@ -55,9 +55,11 @@ const allowedPets = 2;
 //      Console log the value of `result`
 let result;
  if (adventurous) {
-  console.log('Adventures are great!');
+  result = 'Adventures are great!'
+  console.log(result);
  } else {
-  console.log('How about we stay home?');
+  result = 'How about we stay home?'
+  console.log(result);
  }
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
@@ -66,7 +68,7 @@ let result;
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
 let diceRoll = 'Try again later.';
- if(luckyNumber === 2 && adventerous === true) {
+ if(luckyNumber === 2 && adventurous === true) {
   diceRoll = 'Roll the dice';
    console.log(diceRoll);
  } else {
@@ -83,13 +85,16 @@ let diceRoll = 'Try again later.';
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 let petStatus;
  if(pets < allowedPets) {
-  console.log('I can have more pets');
+  petStatus = 'I can have more pets'
+   console.log(petStatus);
  } else if(pets === allowedPets) {
-  console.log('I have enough pets');
+    petStatus =  'I have enough pets'
+     console.log(petStatus);
  } else if(pets > allowedPets) {
-  console.log('Oh no, I have too many pets!');
+    petStatus = 'Oh no, I have too many pets!'
+     console.log(petStatus);
  } else {
-  console.log('Error');
+    console.log('Error');
  }
 
 // STRETCH GOALS:
@@ -101,14 +106,14 @@ let petStatus;
 //      console.log `mostPets` after the conditional has run.
 let mostPets;
  
-if(pets > friendsPet) {
+if(pets > friendsPets) {
   mostPets = pets;
-  } else if(friendsPet > pets) {
-  mostPets = friendsPet;
+  } else if(friendsPets > pets) {
+  mostPets = friendsPets;
   } else {
-     console.log('Something went wrong.');
+     mostPets = pets;
   }
-
+console.log(mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
